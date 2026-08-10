@@ -6,12 +6,58 @@
 }
 
 :root {
-  --amber:      #FFB300;
-  --amber-dim:  #A07020;
-  --amber-dark: #2A1800;
-  --green:      #4DB830;
-  --bg-void:    #0a0a0a;
-  --bg-panel:   #141410;
-  --gap:        3px;
-  --radius:     6px;
+    --amber: #FFB300;
+    --amber-dim: #A07020;
+    --amber-dark: #2A1800;
+    --green: #4DB830;
+    --bg-void: #0a0a0a;
+    --bg-panel: #141410;
+    --gap: 3px;
+    --radius: 6px;
+}
+
+body {
+    background-color: var(--bg-void);
+    color: var(--amber);
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#watch-bezel {
+    width: min(600px, 90vw);
+    background-color: #111;
+    border-radius: 24px;
+    padding: 12px 8px;
+    box-shadow:
+        0 0 0 2px #2a2a2a,
+        0 0 0 4px #1a1a1a,
+        0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+#watch-top {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #444;
+    padding: 6px 0 10px;
+}
+
+#watch-bottom {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 0 6px;
+}
+
+#watch-mid {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
