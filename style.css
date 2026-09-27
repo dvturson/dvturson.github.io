@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#terminal {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#cursor {
+    animation: blink 0.9s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100%    {opacity: 1;}
+    50%         {opacity: 0;}
+}
