@@ -21,6 +21,16 @@ body {
     line-height: 1.8;
 }
 
+#links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
 #cursor {
     animation: blink 0.9s step-end infinite;
 }
