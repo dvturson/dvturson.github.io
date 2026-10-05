@@ -9,8 +9,10 @@
 body {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 30vh;
     background: black;
     color: white;
     font-family: 'Share Tech Mono', monospace;
