@@ -8,7 +8,12 @@ const projectsList = [
     {
         name: "routine-clicker/",
         url: "https://github.com/dvturson/routine-clicker",
-        desc: "a physical check in system bridging hardware and a real time web dashboard"
+        desc: "a physical check in system bridging hardware (esp32 + button + 128x64px oled) and a real time web dashboard"
+    },
+    {
+        name: "space-cats/",
+        url: "https://github.com/dvturson/space-cats",
+        desc: "A top-down roguelike game built with p5.js. You play a cat fighting through cheese-themed planets to rescue kidnapped parents from the Rat King."
     },
 ];
 
@@ -27,7 +32,7 @@ projectsLink.addEventListener("click", function (e) {
     typing = true;
 
     const lines = projectsList.map(p => ({
-        text: `${p.name}    ${p.desc}`,
+        text: `${p.name}\u00A0\u00A0\u00A0\u00A0${p.desc}`,
         url: p.url,
         name: p.name,
     }));
